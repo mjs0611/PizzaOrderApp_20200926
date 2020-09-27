@@ -29,7 +29,7 @@ class StoreAdapter(
         val row = tempRow!!
 
 
-        val logoIng = row.findViewById<ImageView>(R.id.logoImg)
+        val logoImg = row.findViewById<ImageView>(R.id.logoImg)
         val brandNameTxt = row.findViewById<TextView>(R.id.brandNameTxt)
 
         val storeData = mList[position]
