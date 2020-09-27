@@ -15,7 +15,7 @@ import kr.co.tjoeun.pizzaorderapp_20200926.R
 import kr.co.tjoeun.pizzaorderapp_20200926.datas.Store
 import java.security.Permission
 
-class ViewStoreDetailActivity : BaseActivity {
+class ViewStoreDetailActivity : BaseActivity() {
 
     lateinit var mStore : Store
 

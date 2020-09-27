@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".adapters.ViewStoreDetailActivity"></activity>
+        <activity android:name=".adapters.EditNickNameActivity"></activity>
+        <activity android:name=".adapters.ViewStoreDetailActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
