@@ -3,10 +3,12 @@ package kr.co.tjoeun.pizzaorderapp_20200926.adapters
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
+import com.gun0912.tedpermission.PermissionListener
 import kotlinx.android.synthetic.main.activity_view_store_detail.*
 import kr.co.tjoeun.pizzaorderapp_20200926.BaseActivity
 import kr.co.tjoeun.pizzaorderapp_20200926.R
 import kr.co.tjoeun.pizzaorderapp_20200926.datas.Store
+import java.security.Permission
 
 class ViewStoreDetailActivity : BaseActivity {
 
@@ -22,6 +24,19 @@ class ViewStoreDetailActivity : BaseActivity {
     }
 
     override fun setupEvents() {
+
+        callBtn.setOnClickListener {
+            val pl = object : PermissionListener {
+                override fun onPermissionGranted() {
+
+                }
+
+                override fun onPermissionDenied(deniedPermissions: MutableList<String>?) {
+
+                }
+
+            }
+        }
 
     }
 
