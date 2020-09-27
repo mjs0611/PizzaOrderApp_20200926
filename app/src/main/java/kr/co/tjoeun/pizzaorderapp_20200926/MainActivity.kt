@@ -2,6 +2,7 @@ package kr.co.tjoeun.pizzaorderapp_20200926
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_main.*
 import kr.co.tjoeun.pizzaorderapp_20200926.adapters.MainViewPagerAdapter
 
