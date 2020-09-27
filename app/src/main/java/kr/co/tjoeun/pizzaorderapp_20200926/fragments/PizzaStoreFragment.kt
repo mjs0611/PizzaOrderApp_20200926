@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_pizza_store.*
 import kr.co.tjoeun.pizzaorderapp_20200926.R
-import kr.co.tjoeun.pizzaorderapp_20200926.adapters.mStoreAdapter
+import kr.co.tjoeun.pizzaorderapp_20200926.adapters.StoreAdapter
 import kr.co.tjoeun.pizzaorderapp_20200926.datas.Store
 
 class PizzaStoreFragment : Fragment() {
 
     val mPizzaStoreList = ArrayList<Store>()
+
+    lateinit var mStoreAdapter : StoreAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
